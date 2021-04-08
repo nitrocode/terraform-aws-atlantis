@@ -153,7 +153,7 @@ variable "whitelist_unauthenticated_cidr_blocks" {
 variable "alb_listener_ssl_policy_default" {
   description = "The security policy if using HTTPS externally on the load balancer. [See](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html)."
   type        = string
-  default     = "ELBSecurityPolicy-2016-08"
+  default     = "ELBSecurityPolicy-TLS-1-2-2017-01"
 }
 
 # ACM
